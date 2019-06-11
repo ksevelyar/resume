@@ -1,0 +1,195 @@
+doctype html
+html(lang="en")
+  head
+    title Sergey Zubkov
+    link(rel="stylesheet" href="css/bundle.css")
+  body
+    .container
+      section.section
+        h1.title.is-2 Sergey Zubkov
+        h2.subtitle.is-4 Full Stack Engineer
+      section.section
+        .columns
+          .column.is-8
+            p Over 6 years of experience in building web applications and APIs using Ruby and JavaScript. I'm writing SOLID object-oriented code, classifying algorithms by big O notation and avoiding n+1 query problems. I do care about Agile.
+
+          .column
+            p
+              a.is-dark(href='mailto:ksevelyar@gmail.com')
+                span.icon
+                  i.far.fa-envelope
+                span ksevelyar@gmail.com
+            p
+              a(href='https://github.com/ksevelyar')
+                span.icon
+                  i.fab.fa-github
+                span ksevelyar
+            p.has-text-grey
+                span.icon
+                  i.far.fa-clock
+                | 7:00-17:00 UTC
+
+      .section
+        h2.title.is-4 Working History
+        .tile.is-ancestor
+          .tile.is-parent
+            .tile.is-child.box
+              .level.title.is-5
+                .level-left IO Engage
+                .level-right.has-text-grey.is-size-6 Sep 17 - Jul 18
+              .title.is-5 Senior Software Engineer
+              p Graphics management system for large expositions.
+              br
+              p Reduced dashboard rendering time by implementing PostgreSQL materialized views.
+              br
+              p Implemented Leaflet tiles map for expositions floors with custom logic: creation, modification and deletion of items via AJAX, filtering and printing.
+          .tile.is-parent
+            .tile.is-child.box
+              .level.title.is-5
+                .level-left
+                  a(href="https://www.mindbodyonline.com/") Mindbody
+                .level-right.has-text-grey.is-size-6
+                  p May 16 - Mar 19
+              .title.is-5 Senior Ruby on Rails Developer
+              p A middleman company that connects fitness studios and users.
+              br
+              p Integrated Mindbody API and implemented cron based sync for Lymber.
+              br
+              p Refactored JQuery to object-oriented JS and updated Bootstrap 3 to 4.
+              br
+              p Implemented auto-discount for available classes based on popularity, availability, weather and other conditions.
+          .tile.is-parent
+            .tile.is-child.box
+              .level.title.is-5
+                .level-left
+                  a.size-is-5(href='https://rambler-co.ru/en') Rambler&Co
+                .level-right.has-text-grey.is-size-6
+                  p Feb 15 - May 16
+              .title.is-5 Ruby Software Engineer
+              p Gazeta.ru is one of the 3 leading russian on-line newspapers, according to the mlg.ru citation rating.
+              br
+              p Implemented Single Table Inheritance for articles, which helped to remove UNION queries while preserving different types behaviour.
+              br
+              p Added jsonb store, which allowed to change article schema on the fly.
+
+      section.section
+        h2.title.is-4 Skills
+        .columns
+          .column
+            h3.title.is-5 Backend
+            ul
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Ruby / Ruby on Rails linted with Rubocop
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Test Driven Development with RSpec
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | PostgreSQL, Mongo
+          .column
+            h3.title.is-5 Frontend
+            ul
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Vanilla ES10 / Vue linted with ESLint
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Bootstrap 4 / Bulma, SLIM / Pug, SASS / BEM
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Bundled with Webpack
+
+          .column
+            h3.title.is-5 Infrastructure
+            ul
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Linux Administration (Debian and Arch)
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Amazon Web Services: EC2, S3
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Git under git-flow, CI
+
+      section.section
+        .columns.is-multiline
+          .column.is-8
+            h2.title.is-4 Pet Projects
+          .column.is-4
+            h2.title.is-4 Education
+          .column.is-4
+            .card
+              .card-image
+                figure.image.is-2by1
+                  img(src="dist/images/life.png" alt="Life")
+              .card-content
+                h4.title.is-5 Conway's Game of Life
+                p.subtitle.is-6 Vanilla JS cellular automation.
+                p
+                  a(href="https://ksevelyar.github.io/life/") ksevelyar.github.io/life
+
+          .column
+            .card
+              .card-image
+                figure.image.is-2by1
+                  img(src="dist/images/joker.png" alt="Joker")
+              .card-content
+                h4.title.is-5 Neovim Joker Theme
+                p.subtitle.is-6
+                  | Dark theme for Vim & Neovim
+                p
+                  a(href="https://github.com/ksevelyar/joker.vim") github.com/ksevelyar/joker.vim
+
+          .column
+            p
+              .title.is-5 Moscow Technological Institute
+              .subtitle.is-6.level
+                .level-left
+                  span.tag B.Eng.
+                  |&nbsp;
+                  | Software Development
+            p
+              .title.is-5 Favorite Sources
+              ul.subtitle.is-6
+                li
+                  span.icon
+                    i.fas.fa-book
+                  | The Well Grounded Rubyist
+                li
+                  span.icon
+                    i.fas.fa-book
+                  | Eloquent JavaScript
+                li
+                  span.icon
+                    i.fas.fa-book
+                  | The Imposter's Handbook
+                li
+                  span.icon
+                    i.fas.fa-university
+                  | VueMastery
+                li
+                  span.icon
+                    i.fas.fa-university
+                  | Udemy
+
+      .section
+        nav.level.has-text-grey
+          a.level-left(href="https://github.com/ksevelyar/resume")
+            .level-item Made with
+            img.level-item(src="dist/images/made-with-bulma.png")
+          .level-right.is-hidden
+            a.level-item(href="dist/resume.pdf")
+              span.icon
+                i.far.fa-file-alt
+              | Download PDF
