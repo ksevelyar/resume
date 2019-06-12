@@ -20,5 +20,9 @@ $section-padding: 1.5rem 0.75rem
 .icon
   display: inline-table
 
-.mail
-   margin-top: auto !important
+@media print
+  .is-hidden-print
+    display: none !important
+
+  footer
+    margin-top: 65px    

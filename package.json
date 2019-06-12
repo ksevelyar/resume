@@ -1,5 +1,6 @@
 {
   "name": "resume",
+  "sideEffects": false,
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -13,7 +14,10 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "babel-loader": "^8.0.6",
     "bulma": "^0.7.5",
     "css-loader": "^2.1.1",

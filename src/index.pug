@@ -36,8 +36,8 @@ html(lang="en")
               .level.title.is-5
                 .level-left IO Engage
                 .level-right.has-text-grey.is-size-6 Sep 17 - Jul 18
-              .title.is-5 Senior Software Engineer
               p.has-text-grey Graphics management system for large expositions.
+              .title.is-5 Senior Software Engineer
               br
               p Reduced dashboard rendering time by implementing PostgreSQL materialized views.
               br
@@ -49,8 +49,8 @@ html(lang="en")
                   a(href="https://www.mindbodyonline.com/") Mindbody
                 .level-right.has-text-grey.is-size-6
                   p May 16 - Mar 19
-              .title.is-5 Senior Ruby on Rails Developer
               p.has-text-grey A middleman company that connects fitness studios and users.
+              .title.is-5 Senior Ruby on Rails Developer
               br
               p Integrated Mindbody API and implemented cron based sync for Lymber.
               br
@@ -64,8 +64,8 @@ html(lang="en")
                   a.size-is-5(href='https://rambler-co.ru/en') Rambler&Co
                 .level-right.has-text-grey.is-size-6
                   p Feb 15 - May 16
-              .title.is-5 Ruby Software Engineer
               p.has-text-grey Gazeta.ru is one of the three leading russian online newspapers, according to the mlg.ru citation rating.
+              .title.is-5 Ruby Software Engineer
               br
               p Implemented Single Table Inheritance for articles, which helped to remove UNION queries while preserving behaviour of different types.
               br
@@ -99,11 +99,18 @@ html(lang="en")
               li
                 span.icon
                   i.fas.fa-check-square
-                | Bootstrap 4 / Bulma, SLIM / Pug, SASS / BEM
+                | Bulma / Bootstrap 4, SASS / SCSS,
+                |
+                a(href='https://en.bem.info/methodology/') BEM
               li
                 span.icon
                   i.fas.fa-check-square
-                | Bundled with Webpack
+                | Pug, Slim, Haml
+
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Bundled with tree-shaking Webpack 4
 
           .column
             h3.title.is-5 Infrastructure
@@ -156,8 +163,7 @@ html(lang="en")
               .subtitle.is-6.level
                 .level-left
                   span.tag B.Eng.
-                  |&nbsp;
-                  | Software Development
+                  |&nbsp;Software Development
             p
               .title.is-5 Favorite Sources
               ul.subtitle.is-6
@@ -182,9 +188,14 @@ html(lang="en")
                     i.fas.fa-university
                   | Udemy
 
-      .section.has-text-centered
+      footer.section
         nav.level.has-text-grey
-          a.level-item(href="https://github.com/ksevelyar/resume")
-            | Made with
-            |&nbsp;
-            img.level-item(src="images/made-with-bulma.png")
+          .level-left
+            a.level-item(href="https://github.com/ksevelyar/resume")
+              | Made with&nbsp;
+              img(src="images/bulma.png")
+          .level-right.is-hidden-print
+            a.level-item(href="files/Sergey_Zubkov_Full_Stack_Engineer.pdf")
+              span.icon
+                i.far.fa-file-alt
+              | Download PDF
