@@ -33,39 +33,42 @@ html(lang="en")
         .tile.is-ancestor
           .tile.is-parent
             .tile.is-child.box
-              .level.title.is-5
-                .level-left IO Engage
-                .level-right.has-text-grey.is-size-6 Sep 17 - Jul 18
-              p.has-text-grey Graphics management system for large expositions.
-              .title.is-5 Senior Software Engineer
+              p
+                h3.is-size-5.is-inline IO Engage
+                |&nbsp;
+                span.has-text-grey is a graphics management system for large expositions.
               br
+              br
+              h3.title.is-5 Senior Software Engineer
+              .subtitle.is-6 Sep 17 - Jul 18
               p Reduced dashboard rendering time by implementing PostgreSQL materialized views.
               br
               p Implemented Leaflet tiles map for expositions floors with custom logic: creation, modification and deletion of items via AJAX, filtering and printing.
           .tile.is-parent
             .tile.is-child.box
-              .level.title.is-5
-                .level-left
-                  a(href="https://www.mindbodyonline.com/") Mindbody
-                .level-right.has-text-grey.is-size-6
-                  p May 16 - Mar 19
-              p.has-text-grey A middleman company that connects fitness studios and users.
-              .title.is-5 Senior Ruby on Rails Developer
+              p
+                a.is-size-5(href="https://www.mindbodyonline.com/") Mindbody
+                |&nbsp;
+                span.has-text-grey is a middleman company that connects fitness studios and users.
               br
+              br
+              .title.is-5 Senior Ruby on Rails Developer
+              .subtitle.is-6 May 16 - Mar 19
               p Integrated Mindbody API and implemented cron based sync for Lymber.
               br
-              p Refactored JQuery to object-oriented JS and updated Bootstrap 3 to 4.
+              p Implemented Rails endpoint for Amazon Alexa Skill.
               br
-              p Implemented auto-discount for available classes based on popularity, availability, weather and other conditions.
+              p Implemented auto-discount logic for classes.
           .tile.is-parent
             .tile.is-child.box
-              .level.title.is-5
-                .level-left
-                  a.size-is-5(href='https://rambler-co.ru/en') Rambler&Co
-                .level-right.has-text-grey.is-size-6
-                  p Feb 15 - May 16
-              p.has-text-grey Gazeta.ru is one of the three leading russian online newspapers, according to the mlg.ru citation rating.
+              p
+                a.is-size-5(href='https://rambler-co.ru/en') Rambler&Co
+                span.has-text-grey :
+                |&nbsp;
+                span.has-text-grey gazeta.ru is the third most cited Russian online newspapers, according to the mlg.ru.
+              br
               .title.is-5 Ruby Software Engineer
+              .subtitle.is-6 Feb 15 - May 16
               br
               p Implemented Single Table Inheritance for articles, which helped to remove UNION queries while preserving behaviour of different types.
               br
