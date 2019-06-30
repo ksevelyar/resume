@@ -1,10 +1,7 @@
-# Resume
-Proudly powered by Bulma
-
-## Features
+# Features
 
 * Google Analytics
 * Bulma, Pug, SASS
-* Webpack 4 with tree-shaking
+* Webpack 4 with tree-shaking and Brotli
 * Font Awesome
 * GitHub Pages
