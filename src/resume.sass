@@ -28,11 +28,17 @@ $section-padding: 1.5rem 0.75rem
 .icon
   display: inline-table
 
+.footer
+  background: inherit
+
+
 @media print
+  .footer
+    margin-top: 65px    
+    padding-bottom: 0
+    .level
+      align-items: center
+      justify-content: center
+
   .is-hidden-print
     display: none !important
-
-  .footer
-    margin-top: 50px    
-    padding-bottom: 0
-    background: inherit

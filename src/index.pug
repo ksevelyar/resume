@@ -155,7 +155,7 @@ html(lang="en")
             .card
               .card-image
                 figure.image.is-2by1
-                  img(src="images/life.png" alt="Life")
+                  img(src="images/life.webp" alt="Life")
               .card-content
                 h4.title.is-5 Conway's Game of Life
                 p.subtitle.is-6 Vanilla JS cellular automation.
@@ -166,7 +166,7 @@ html(lang="en")
             .card
               .card-image
                 figure.image.is-2by1
-                  img(src="images/joker.png" alt="Joker")
+                  img(src="images/joker.webp" alt="Joker")
               .card-content
                 h4.title.is-5 Neovim Joker Theme
                 p.subtitle.is-6
@@ -209,12 +209,15 @@ html(lang="en")
         nav.level.has-text-grey
           .level-left
             a.level-item(href="https://github.com/ksevelyar/resume")
-              | Made with&nbsp;
-              img(src="images/bulma.png")
+              span.icon
+                i.fab.fa-github
+              span /resume
+
           .level-right.is-hidden-print
             a.level-item(href="files/Sergey_Zubkov_Full_Stack_Engineer.pdf")
+              | Download PDF
+              |&nbsp;
               span.icon
                 i.far.fa-file-alt
-              | Download PDF
 
   include google_analytics.html
