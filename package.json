@@ -6,7 +6,7 @@
   "private": true,
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack -p --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
   "author": "",
