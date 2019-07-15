@@ -1,7 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const BrotliPlugin = require('brotli-webpack-plugin');
+
+const zopfli = require("@gfx/zopfli");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   entry: './src/index.js',
@@ -37,11 +39,22 @@ module.exports = {
       template : 'src/index.pug',
       inject   : true
     }),
-    new BrotliPlugin({
-      asset: '[path].br[query]',
-      test: /\.js$|\.css$|\.html$/,
+    new CompressionPlugin({
+      compressionOptions: {
+        numiterations: 15
+      },
+      algorithm(input, compressionOptions, callback) {
+        return zopfli.gzip(input, compressionOptions, callback);
+      }
+    }),
+    new CompressionPlugin({
+      filename: "[path].br[query]",
+      algorithm: "brotliCompress",
+      test: /\.(js|css|html|svg)$/,
+      compressionOptions: { level: 11 },
       threshold: 10240,
-      minRatio: 0.7
+      minRatio: 0.8,
+      deleteOriginalAssets: false
     })
   ]
 };
