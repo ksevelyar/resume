@@ -1,6 +1,10 @@
 doctype html
 html(lang="en")
   head
+    link(rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png")
+    link(rel="manifest" href="images/favicon/site.webmanifest")
     title Sergey Zubkov | Full Stack Engineer
   body
     .container
@@ -10,7 +14,7 @@ html(lang="en")
       section.section
         .columns
           .column.is-8
-            p Over 6 years of experience in building web applications and APIs using Ruby and JavaScript. I'm writing SOLID object-oriented code, classifying algorithms by big O notation and avoiding n+1 query problems. I do care about Agile.
+            p Over 7 years of experience in building web applications and APIs using Ruby and JavaScript. I'm writing SOLID object-oriented code, classifying algorithms by big O notation and avoiding n+1 query problems. I do care about Agile.
 
           .column
             p
@@ -88,23 +92,24 @@ html(lang="en")
               li
                 span.icon
                   i.fas.fa-check-square
-                | TDD with RSpec, VCR, factory_bot
+                | TDD with RSpec, VCR, Factory Bot
               li
                 span.icon
                   i.fas.fa-check-square
-                | PostgreSQL 11 with JIT, PgHero and PgTune
+                | RESTful API powered by&nbsp;
+                a(href='https://github.com/Netflix/fast_jsonapi') fast JSON
               li
                 span.icon
                   i.fas.fa-check-square
-                | Redis for Sidekiq and cache store
+                | PostgreSQL tuned by PgHero and PgTune
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Redis for Sidekiq and cache
               li
                 span.icon
                   i.fas.fa-check-square
                 | Elasticsearch, elasticsearch-model
-              li
-                span.icon
-                  i.fas.fa-check-square
-                | XSS/CSRF safe JWT auth
 
           .column
             h3.title.is-5 Frontend
@@ -112,7 +117,7 @@ html(lang="en")
               li
                 span.icon
                   i.fas.fa-check-square
-                | ES10 / Vue / Nuxt / linted with ESLint
+                | JS ES10 / Vue / Nuxt / linted with ESLint
               li
                 span.icon
                   i.fas.fa-check-square
@@ -120,19 +125,16 @@ html(lang="en")
               li
                 span.icon
                   i.fas.fa-check-square
-                | Bulma / Bootstrap 4, SASS,
-                |
+                | Vue Meta and prerender / SSR for SEO
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Bulma / Bootstrap 4 / TailwindCSS
+              li
+                span.icon
+                  i.fas.fa-check-square
+                | Pug, Slim, Markdown, SASS,&nbsp;
                 a(href='https://en.bem.info/methodology/') BEM
-              li
-                span.icon
-                  i.fas.fa-check-square
-                a(href='https://github.com/ksevelyar/code-review') SpectreCSS
-                |,&nbsp;
-                a(href='https://github.com/ksevelyar/antipatterns-checklist') TailwindCSS, PurgeCSS
-              li
-                span.icon
-                  i.fas.fa-check-square
-                | Pug, Markdown, Slim
               li
                 span.icon
                   i.fas.fa-check-square
@@ -143,12 +145,12 @@ html(lang="en")
                 | Bundled with tree-shaking Webpack&nbsp;4
 
           .column
-            h3.title.is-5 Infrastructure
+            h3.title.is-5 Devops
             ul
               li
                 span.icon
                   i.fas.fa-check-square
-                | Linux Administartion: Alpine, Debian, Arch
+                | Linux Administration: Alpine, Debian, Arch
               li
                 span.icon
                   i.fas.fa-check-square
@@ -156,7 +158,8 @@ html(lang="en")
               li
                 span.icon
                   i.fas.fa-check-square
-                | ASDF, Capistrano
+                | Automated SSL with&nbsp;
+                a(href="https://certbot.eff.org/") Certbot
               li
                 span.icon
                   i.fas.fa-check-square
@@ -168,9 +171,7 @@ html(lang="en")
               li
                 span.icon
                   i.fas.fa-check-square
-                | HTTPS, NGINX,&nbsp;
-                a(href="https://certbot.eff.org/")
-                  | Certbot
+                | NGINX, Brotli, Zopfli
 
       section.section
         .columns.is-multiline
@@ -193,13 +194,12 @@ html(lang="en")
             .card
               .card-image
                 figure.image.is-2by1
-                  img(src="images/joker.webp" alt="Joker")
+                  img(src="images/code-review-dashboard.webp" alt="Code Review")
               .card-content
-                h4.title.is-5 Neovim Joker Theme
-                p.subtitle.is-6
-                  | Dark theme for Vim & Neovim.
+                h4.title.is-5 Code Review Dashboard
+                p.subtitle.is-6 Vue, Spectre CSS and Travis CI
                 p
-                  a(href="https://github.com/ksevelyar/joker.vim") github.com/ksevelyar/joker.vim
+                  a(href="https://ksevelyar.github.io/code-review/") ksevelyar.github.io/code-review
 
           .column
             p
@@ -233,7 +233,7 @@ html(lang="en")
                   | Udemy
 
       .footer.section
-        nav.level.has-text-grey
+        nav.level.has-text-grey.is-mobile
           .level-left
             a.level-item(href="https://github.com/ksevelyar/resume")
               span.icon
