@@ -38,12 +38,16 @@ body {
 
 p {
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 img {
   max-width: 100%;
   object-fit: none;
   object-position: 0 0;
+}
+ul {
+  list-style: none;
 }
 
 .resume {
@@ -54,8 +58,8 @@ img {
   font-family: "Iosevka";
   padding: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: min-content;
+  grid-template-columns: 1fr;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -77,16 +81,34 @@ img {
   font-weight: 400;
 }
 
-.resume-contacts {
-  text-align: right;
-  grid-column-end: span 2;
+.section-title {
+  margin-top: 60px;
 }
 
-.intro,
-.section-title {
-  grid-column-end: span 3;
+.resume {
+  text-align: center;
+  padding: 20px;
 }
 
-.section-title {
-  margin-top: 30px;
+@media (min-width: 800px) {
+  .resume {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+  .resume-contacts {
+    text-align: right;
+    grid-column-end: span 2;
+  }
+
+  .intro,
+  .section-title {
+    grid-column-end: span 3;
+    margin-top: 20px;
+  }
+  ul {
+    list-style: disclosure-closed inside;
+  }
 }
