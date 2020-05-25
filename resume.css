@@ -111,11 +111,21 @@ ul {
     grid-column-end: span 2;
     text-align: left;
   }
+
+  .resume-header__name,
+  .resume-contacts__github {
+    font-size: 26px;
+  }
+
+  .resume-header__position,
+  .resume-contacts__email {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 850px) {
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
   .wh-2 {
     grid-row: auto;
@@ -127,7 +137,6 @@ ul {
 
   .resume {
     grid-template-columns: 1fr 1fr 1fr;
-  padding: 5px;
   }
   .resume-contacts {
     text-align: right;
