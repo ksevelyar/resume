@@ -1,3 +1,5 @@
+/* TODO: implement CSS Variables */
+
 @font-face {
   font-family: "Iosevka";
   font-display: swap;
@@ -14,6 +16,7 @@
 }
 
 a {
+  transition: all .3s linear;
   text-decoration: none;
   color: #7a79b7;
 }
@@ -33,7 +36,6 @@ h2 {
 body {
   font-size: 18px;
   color: #22181c;
-  font-weight: 500;
 }
 
 p {
@@ -46,6 +48,7 @@ img {
   object-fit: none;
   object-position: 0 0;
 }
+
 ul {
   list-style: none;
 }
@@ -90,7 +93,7 @@ ul {
   padding: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   body {
     font-size: 16px;
   }
