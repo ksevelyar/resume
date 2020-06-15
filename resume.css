@@ -65,7 +65,8 @@ ul {
 }
 
 .resume-contacts {
-  text-align: right;
+  grid-column-end: span 2;
+  text-align: left;
 }
 
 .resume-header__name,
@@ -106,10 +107,18 @@ ul {
   grid-column-end: span 2;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .resume-contacts {
-    grid-column-end: span 2;
-    text-align: left;
+    text-align: right;
+    grid-column-end: span 1;
+  }
+
+  .wh-2 {
+    grid-row: 5;
+  }
+
+  .wh-4 {
+    grid-row: 7;
   }
 
   .resume-header__name,
