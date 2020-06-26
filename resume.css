@@ -37,6 +37,7 @@ h3 {
 body {
   font-size: 18px;
   color: #22181c;
+  background: #d7cde1;
 }
 
 p {
@@ -49,7 +50,6 @@ ul {
 .resume {
   grid-gap: 20px;
   min-height: 100vh;
-  background: #d7cde1;
   margin: 0;
   font-family: "Iosevka";
   padding: 20px;
@@ -132,7 +132,14 @@ ul {
   }
 }
 
-@media (min-width: 850px) {
+@media print {
+  body {
+    font-size: 14pt;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 850px), print {
   body {
     font-size: 17px;
   }
