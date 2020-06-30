@@ -1,8 +1,13 @@
-/* TODO: implement CSS Variables */
+:root {
+  --bg: #d7cde1;
+  --fg: #22181c;
+  --link-fg: #7a79b7;
+  --link-fg-hover: #00afb5;
+  --font-size: 16px;
+}
 
 @font-face {
   font-family: "Iosevka";
-  /* font-display: swap; */
   font-stretch: normal;
   font-style: normal;
   src: url("iosevka/iosevka-light.woff2") format("woff2");
@@ -17,10 +22,10 @@
 a {
   transition: all 0.2s linear;
   text-decoration: none;
-  color: #7a79b7;
+  color: var(--link-fg);
 }
 a:hover {
-  color: #00afb5;
+  color: var(--link-fg-hover);
 }
 
 h1,
@@ -28,16 +33,10 @@ h2 {
   font-weight: 500;
 }
 
-h1,
-h2,
-h3 {
-  text-align: left;
-}
-
 body {
-  font-size: 18px;
-  color: #22181c;
-  background: #d7cde1;
+  font-size: var(--font-size);
+  color: var(--fg);
+  background: var(--bg);
 }
 
 ul {
@@ -45,16 +44,15 @@ ul {
 }
 li:before {
   content: "⋄";
-  padding-right: 8px;
-  font-size: 18px;
+  padding-right: 0.5rem;
 }
 
 .resume {
-  grid-gap: 20px;
+  grid-gap: 1rem;
   min-height: 100vh;
   margin: 0;
   font-family: "Iosevka";
-  padding: 20px;
+  padding: 0.5rem;
   display: grid;
   grid-auto-rows: min-content;
   grid-template-columns: 1fr 1fr;
@@ -68,23 +66,22 @@ li:before {
 
 .resume-contacts {
   grid-column-end: span 2;
-  text-align: left;
 }
 
 .resume-header__name,
 .resume-contacts__github {
-  font-size: 32px;
+  font-size: 2rem;
   display: block;
 }
 
 .resume-header__position,
 .resume-contacts__email {
-  font-size: 24px;
+  font-size: 1.5rem;
   display: block;
 }
 
 .section-title {
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 
 .resume-image {
@@ -132,19 +129,20 @@ li:before {
   .resume-contacts__email {
     font-size: 24px;
   }
+
+  .resume {
+    padding: 1rem;
+  }
 }
 
 @media print {
   body {
     font-size: 14pt;
-    background-color: #fff;
+    background-color: white;
   }
 }
 
 @media (min-width: 850px), print {
-  body {
-    font-size: 17px;
-  }
   .wh-2 {
     grid-row: auto;
   }
