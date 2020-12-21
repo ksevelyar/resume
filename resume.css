@@ -20,11 +20,11 @@
 }
 
 a {
-  transition: all 0.2s linear;
   text-decoration: none;
   color: var(--link-fg);
 }
 a:hover {
+  transition: all 0.5s linear;
   color: var(--link-fg-hover);
 }
 
