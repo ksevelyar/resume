@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" />
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB2ElEQVRYhe2XMU/CQBiGLzo5g0h7XdTFUQcHBnFSo7YdJP4Do4s66GAcTNRFogF1gpboLi5lgcGFH8AiJiYMxEGjMc46EPH8PltEEbCVljrQ5Ema3nf3vL27Ni0hJg9F4hdUmRaAsioLrD7YRgtYa3ZcU4cq8SuqRN8ai2uAWkXkl22RJ+dJNwz4ZFpenY3HbUK6Wg6gTHm5yqCKRK+AQxg8Ug9sw5rPeujbcoCY6KGGvBgNkJ7f6rEGam+wT2KaCrYFgDs8N9sHAiRtD5CQadJsH9gzZ5YCxGe4oCLSC0Wmt4ok3H0FBrr/WAJZeKltawTM1rO+bMLDj3Z0gAudhpyfgOKS9V3eMiV0E3hecy7IdUQhhxumyZvNWdBNXLt7g04AywESoUGWPomwbFoDUgYay8A1bHM8gLa/xnLXxbpoB+vWA8RmqbUAILErALrJ3pjf8hJkTqMsm0l9A69ZXQJ0k9UhLzua5Nq++Y7BiW6yNepjSwMetjniYzuBPrbrMOhAFzrRTeIiZRvDvWyx39NW0IluUp0SnoXH/SwcdBhwoOvPj6HddAJ0AvyDABJ9dS0AuDHApVsB4JMsDwG4UPM/Xqeg5fgsN6d/msOJ/k/XjuVAB81X5O8NYcgupDbQwAAAAABJRU5ErkJggg==" />
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA6ElEQVQ4jWNgQAPTfYSlZ/pKn5vlK/1vlp/MfzAGskFiIDl09Rhglq9UI1DDF6CGY8gYLOYn1UDYAD/p3pm+Uino4iAxkByGhpkugvxAG9Jn+EgXgTDQpv1AhQthfBgGqlkwy1fmABI/HaSXYZaP1CG4X0nFPjKHGFACi1QM1MtAtmYoxmnA5in1/48dOwbGm6c04DZgiqcUDgMagJqPgzEuA0B6GSoMRf93O0r+73MmDYP0gPQyTHCT+l9pKPa/XF+UJAzSA9JLu0CkowG+0p/I1QxMzp+BSVkyY6af9GeSNQP1zADqBQCQXbs3KFrEZAAAAABJRU5ErkJggg==" />
+  <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIiIsCiAgInNob3J0X25hbWUiOiAiIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiL2ltYWdlcy9mYXZpY29uL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9LAogICAgewogICAgICAic3JjIjogIi9pbWFnZXMvZmF2aWNvbi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfQogIF0sCiAgInRoZW1lX2NvbG9yIjogIiNmZmZmZmYiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+
+  <title>Sergey Zubkov | Full Stack Engineer</title>
+<script type="module" crossorigin src="/assets/index.581c5e4d.js"></script>
+  <link rel="stylesheet" href="/assets/index.baa44228.css">
+</head>
+
+<body class="resume">
+  <div class="resume-header">
+    <h1 class="resume-header__name">Sergey&nbsp;Zubkov</h1>
+    <h2 class="resume-header__position">Full&nbsp;Stack&nbsp;Engineer</h2>
+  </div>
+
+  <div class="resume-contacts">
+    <a class="resume-contacts__github" href="https://github.com/ksevelyar">github.com/ksevelyar</a>
+    <a class="resume-contacts__email" title="Response: 7:00-17:00 UTC"
+      href="mailto:ksevelyar@gmail.com">ksevelyar@gmail.com</a>
+  </div>
+
+  <div class="intro">
+    I have over 7 years of experience in building web applications and APIs. My primary tools are
+    Phoenix and Vue. I utilize functional approach whenever it
+    is possible, classify algorithms by big O notation and avoid n+1 query
+    problems. I do care about Agile.
+  </div>
+
+  <div class="section-title">
+    <h2>Key Skills</h2>
+  </div>
+  <div class="section-column">
+    <h3>Backend</h3>
+    <ul>
+      <li>Elixir & Phoenix</li>
+      <li>RESTful controllers</li>
+      <li>PostgreSQL</li>
+    </ul>
+  </div>
+  <div class="section-column">
+    <h3>Frontend</h3>
+    <ul>
+      <li>JavaScript ES10</li>
+      <li>Vue, Vuex, D3</li>
+      <li><a href="https://en.bem.info/methodology/">BEM</a>, CSS Grid, flexboxes</li>
+    </ul>
+  </div>
+  <div class="section-column">
+    <h3>Devops</h3>
+    <ul>
+      <li>NixOS, Debian, Alpine</li>
+      <li>Nginx with Let's Encrypt</li>
+      <li>CI & CD with Nix</li>
+    </ul>
+  </div>
+
+  <div class="section-title">
+    <h2>Working History</h2>
+  </div>
+
+  <div class="section-column wh-5">
+    <h3>Oct 2019 to May 2020</h3>
+    <p><strong>B2B Beaty Platform</strong> for brands and retailers</p>
+  </div>
+  <div class="section-column wh-1">
+    <h3>Sep 2017 to Jul 2018</h3>
+    <p><strong>Graphics Management System</strong> for large expositions.</p>
+  </div>
+  <div class="section-column wh-3">
+    <h3>May 2016 to Mar 2019</h3>
+    <p><strong>Mindbody</strong> connects fitness studios and users.</p>
+  </div>
+
+  <div class="section-column wh-2">
+    <p>
+      I've writed progressive web app with Vue/Vuex/Pug/SASS stack. This
+      includes Firebase Auth, integration with REST API and custom components
+      for cropping and processing images.
+    </p>
+  </div>
+  <div class="section-column wh-4">
+    <p>
+      Reduced dashboard rendering time by adding PostgreSQL materialized
+      views. Implemented Leaflet map with custom plugins: CRUD via Fetch API,
+      filtering & printing.
+    </p>
+  </div>
+  <div class="section-column wh-5">
+    <p>
+      Integrated Mindbody API and implemented cron based sync for Lymber.
+      Implemented Rails endpoint for Amazon Alexa Skill. Implemented
+      auto-discount logic for classes.
+    </p>
+  </div>
+
+  <div class="section-title">
+    <h2>Git</h2>
+  </div>
+  <div class="section-column">
+    <a href="https://github.com/ksevelyar/drawable-map" target="_blank">
+      <h3>geoJSON Polygons CRUD</h3>
+      <img class="resume-image" src="/assets/drawable-map.dcdbf072.png" alt="" />
+    </a>
+  </div>
+  <div class="section-column">
+    <a href="https://ksevelyar.github.io/code-review/" target="_blank">
+      <h3>Code Review Dashboard</h3>
+      <img class="resume-image" src="/assets/code-review-dashboard.fa200b0f.png" alt="" />
+    </a>
+  </div>
+  <div class="section-column">
+    <a href="https://ksevelyar.github.io/life/" target="_blank">
+      <h3>Conway's Game of life</h3>
+      <img class="resume-image" src="/assets/life.d8911d83.png" alt="" />
+    </a>
+  </div>
+
+  
+</body>
+
+</html>
