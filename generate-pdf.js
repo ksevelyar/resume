@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 
 const currentDir = dirname(fileURLToPath(import.meta.url));
 
-(async () => { 
+(async () => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
