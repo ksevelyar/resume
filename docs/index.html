@@ -1,116 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-uOyqi8xd.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-DAuIgcaO.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16-BsGuVGM3.png">
+    <link rel="manifest" href="./assets/site-DQBq0QZe.webmanifest">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-uOyqi8xd.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-DAuIgcaO.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16-BsGuVGM3.png" />
-  <link rel="manifest" href="./assets/site-DQBq0QZe.webmanifest" />
+    <title>Sergey Zubkov · Senior Backend Engineer · Elixir / Nix / Rust</title>
+    <script type="module" crossorigin src="./assets/index-yTVlVGV7.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BNe3Qc0N.css">
+  </head>
 
-  <title>Sergey Zubkov | Full Stack Engineer</title>
-  <script type="module" crossorigin src="./assets/index-yTVlVGV7.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BNe3Qc0N.css">
-</head>
+  <body class="resume">
+    <div class="resume-header">
+      <h1 class="resume-header__name">Sergey&nbsp;Zubkov</h1>
+      <h2 class="resume-header__position">Senior Backend Engineer</h2>
+    </div>
 
-<body class="resume">
-  <div class="resume-header">
-    <h1 class="resume-header__name">Sergey&nbsp;Zubkov</h1>
-    <h2 class="resume-header__position">Full&nbsp;Stack&nbsp;Engineer</h2>
-  </div>
+    <div class="resume-contacts">
+      <a class="resume-contacts__github" href="https://github.com/ksevelyar">github.com/ksevelyar</a>
+      <a class="resume-contacts__email" href="mailto:ksevelyar@gmail.com">ksevelyar@gmail.com</a>
+    </div>
 
-  <div class="resume-contacts">
-    <a class="resume-contacts__github" href="https://github.com/ksevelyar">github.com/ksevelyar</a>
-    <a class="resume-contacts__email" href="mailto:ksevelyar@protonmail.com">ksevelyar@protonmail.com</a>
-  </div>
+    <div class="intro">
+      <p>Самоучка-программист с ~12 годами опыта разработки коммерческих веб-приложений. Основной интерес — проектирование архитектуры систем и принятие технических решений на уровне сервисов и отдельных задач.</p>
 
-  <div class="intro">
-    👋 I'm a self-taught programmer and Linux enthusiast with over 10 years of experience building web applications and APIs. 
-    My main tools are Phoenix and Vue, and I'm currently focused on learning <a href="https://exercism.org/profiles/ksevelyar/solutions?order=newest_first">Elixir and Rust</a>.
-    I'm also passionate about Agile methodologies.
-  </div>
+      <p>Основной стек: Elixir (4 года), Nix, Vue 3, ранее — Ruby.
+        Последние несколько лет активно изучаю Rust, интересуюсь системным программированием и архитектурой языков без сборщика мусора.</p>
 
-  <div class="section-title">
-    <h2>Key Skills</h2>
-  </div>
-  <div class="section-column">
-    <h3>Backend</h3>
-    <ul>
-      <li>Elixir & Phoenix</li>
-      <li>Rust</li>
-      <li>PostgreSQL</li>
-    </ul>
-  </div>
-  <div class="section-column">
-    <h3>Frontend</h3>
-    <ul>
-      <li>Vue 3, composition api</li>
-      <li>ESNext</li>
-      <li>BEM, CSS Grid, flexboxes</li>
-    </ul>
-  </div>
+      <p>Люблю разбираться в устройстве систем и собирать их целиком — от архитектуры приложения до инфраструктуры и железа.</p>
+    </div>
 
-  <div class="section-title">
-    <h2>Working History</h2>
-  </div>
+    <div class="section-column wh-3">
+      <h3>2022 - 2026</h3>
+      <p><strong>Express (корпоративный мессенджер)</strong>
+      Команда ~11 инженеров. Разработка сервисов backend-инфраструктуры мессенджера.</p>
+    </div>
+    <div class="section-column wh-5">
+      <h3>2019 - 2022</h3>
+      <p><strong>B2B Beaty Platform</strong>
+      for brands and retailers</p>
+    </div>
+    <div class="section-column wh-1">
+      <h3>2017 - 2019</h3>
+      <p><strong>Graphics Management System</strong>
+      for large expositions.</p>
+    </div>
 
-  <div class="section-column wh-3">
-    <h3>2022 - present</h3>
-    <p><strong>Express</strong> - a secure, corporate-oriented messenger</p>
-  </div>
-  <div class="section-column wh-5">
-    <h3>2019 - 2022</h3>
-    <p><strong>B2B Beaty Platform</strong> for brands and retailers</p>
-  </div>
-  <div class="section-column wh-1">
-    <h3>2017 - 2019</h3>
-    <p><strong>Graphics Management System</strong> for large expositions.</p>
-  </div>
+    <div class="section-column wh-5">
+      <p>
+        Реализовал распределенный поиск используя async_stream_nolink и pg_trgrm. Оптимизировал работу пуш сервиса прокачивающего 5 миллионов пушей в час: исправил ротацию соединений в адаптерах http2 для ios и android, добавил broadway и настроил рейт лимиты, которые помогли остановить тротлинг со стороны провайдеров во время лавин из сообщений.
+      </p>
+    </div>
+    <div class="section-column wh-2">
+      <p>
+        I've writed progressive web app with Vue/Vuex/Pug/SASS stack. This
+        includes Firebase Auth, integration with REST API and custom components
+        for cropping and processing images.
+      </p>
+    </div>
+    <div class="section-column wh-4">
+      <p>
+        Reduced dashboard rendering time by adding PostgreSQL materialized
+        views. Implemented Leaflet map with custom plugins: CRUD via Fetch API,
+        filtering & printing.
+      </p>
+    </div>
 
-  <div class="section-column wh-5">
-    <p>
-      Implemented distributed user search and UX for the ABAC role-based system.
-    </p>
-  </div>
-  <div class="section-column wh-2">
-    <p>
-      I've writed progressive web app with Vue/Vuex/Pug/SASS stack. This
-      includes Firebase Auth, integration with REST API and custom components
-      for cropping and processing images.
-    </p>
-  </div>
-  <div class="section-column wh-4">
-    <p>
-      Reduced dashboard rendering time by adding PostgreSQL materialized
-      views. Implemented Leaflet map with custom plugins: CRUD via Fetch API,
-      filtering & printing.
-    </p>
-  </div>
+    <div class="section-title">
+      <h2>Projects</h2>
+    </div>
+    <div class="section-column">
+      <a href="https://github.com/ksevelyar/habits-phoenix" target="_blank">
+        <h3>Phoenix backend for habits tracker</h3>
+        <img class="resume-image" src="./assets/drawable-map-13tgU-ox.png" alt="">
+      </a>
+    </div>
+    <div class="section-column">
+      <a href="https://github.com/ksevelyar/habits-vue" target="_blank">
+        <h3>Vue 3 frontend for habits tracker</h3>
+        <img class="resume-image" src="./assets/code-review-dashboard-DcsNiAGy.png" alt="">
+      </a>
+    </div>
+    <div class="section-column">
+      <a href="https://github.com/ksevelyar/idempotent-desktop" target="_blank">
+        <h3>NixOS multi-user and multi-host configuration</h3>
+        <img class="resume-image" src="./assets/code-review-dashboard-DcsNiAGy.png" alt="">
+      </a>
+    </div>
 
-  <div class="section-title">
-    <h2>Personal Projects</h2>
-  </div>
-  <div class="section-column">
-    <a href="https://github.com/ksevelyar/habits-phoenix" target="_blank">
-      <h3>Phoenix backend for habits tracker</h3>
-      <img class="resume-image" src="./assets/drawable-map-13tgU-ox.png" alt="" />
-    </a>
-  </div>
-  <div class="section-column">
-    <a href="https://github.com/ksevelyar/habits-vue" target="_blank">
-      <h3>Vue 3 frontend for habits tracker</h3>
-      <img class="resume-image" src="./assets/code-review-dashboard-DcsNiAGy.png" alt="" />
-    </a>
-  </div>
-  <div class="section-column">
-    <a href="https://github.com/ksevelyar/idempotent-desktop" target="_blank">
-      <h3>NixOS multi-user and multi-host configuration</h3>
-      <img class="resume-image" src="./assets/code-review-dashboard-DcsNiAGy.png" alt="" />
-    </a>
-  </div>
-
-</body>
-
+  </body>
 </html>
