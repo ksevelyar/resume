@@ -26,7 +26,7 @@
     <div class="intro">
       <p>Самоучка-программист с ~12 годами опыта разработки коммерческих веб-приложений. Основной интерес — проектирование архитектуры систем и принятие технических решений на уровне сервисов и отдельных задач.</p>
 
-      <p>Основной стек: Elixir (4 года), Nix, Vue 3, ранее — Ruby.
+      <p>Основной стек: Elixir (4 года), Nix, Vue 3, ранее Ruby.
         Последние несколько лет активно изучаю Rust, интересуюсь системным программированием и архитектурой языков без сборщика мусора.</p>
 
       <p>Люблю разбираться в устройстве систем и собирать их целиком — от архитектуры приложения до инфраструктуры и железа.</p>
@@ -39,13 +39,11 @@
     </div>
     <div class="section-column wh-5">
       <h3>2019 - 2022</h3>
-      <p><strong>B2B Beaty Platform</strong>
-      for brands and retailers</p>
+      <p><strong>B2B-платформа в сфере красоты для брендов и ритейлеров</strong></p>
     </div>
     <div class="section-column wh-1">
       <h3>2017 - 2019</h3>
-      <p><strong>Graphics Management System</strong>
-      for large expositions.</p>
+      <p><strong>Система управления графикой для крупных выставок</strong></p>
     </div>
 
     <div class="section-column wh-5">
@@ -55,16 +53,12 @@
     </div>
     <div class="section-column wh-2">
       <p>
-        I've writed progressive web app with Vue/Vuex/Pug/SASS stack. This
-        includes Firebase Auth, integration with REST API and custom components
-        for cropping and processing images.
+        Написал прогрессивное веб-приложение с использованием стека Vue, Vuex, Pug и SASS. Реализовал аутентификацию через Firebase Auth, интеграцию с REST API, а также кастомные компоненты для обрезки и обработки изображений.
       </p>
     </div>
     <div class="section-column wh-4">
       <p>
-        Reduced dashboard rendering time by adding PostgreSQL materialized
-        views. Implemented Leaflet map with custom plugins: CRUD via Fetch API,
-        filtering & printing.
+        Сократил время рендеринга дашборда за счёт внедрения materialized views PostgreSQL. Реализовал карту на базе Leaflet с кастомными плагинами: CRUD-операции через Fetch API, фильтрацию и печать.
       </p>
     </div>
 
@@ -72,22 +66,23 @@
       <h2>Projects</h2>
     </div>
     <div class="section-column">
-      <a href="https://github.com/ksevelyar/habits-phoenix" target="_blank">
-        <h3>Phoenix backend for habits tracker</h3>
-        <img class="resume-image" src="images/drawable-map.png" alt="">
+        <h3>Nixie Clock</h3>
+      <a href="https://github.com/ksevelyar/nixie-clock" target="_blank">
+        nixie-clock
       </a>
+        <img class="resume-image" src="images/nixie-clock.jpg" alt="">
+      <p>NTP-часы с 40-летними индикаторными лампами ИН-12 на Rust. Печатная плата спроектирована в LibrePCB, корпус спроектирован в OpenSCAD и напечатан на Ender 3 Pro под управлением Klipper.</p>
     </div>
     <div class="section-column">
-      <a href="https://github.com/ksevelyar/habits-vue" target="_blank">
-        <h3>Vue 3 frontend for habits tracker</h3>
-        <img class="resume-image" src="images/code-review-dashboard.png" alt="">
-      </a>
+      <h3>Habits Tracker</h3>
+      <a href="https://github.com/ksevelyar/habits-phoenix" target="_blank">habits-phoenix</a>
+      <a href="https://github.com/ksevelyar/habits-vue" target="_blank">habits-vue</a>
+      <p>Приложение для трекинга привычек, которым пользуюсь ежедневно. Бекенд на Phoenix, фронтенд Vue 3, интеграция с Телеграмом через бот. Бекенд и фронтенд сразу разделены на разные репозитории.</p>
     </div>
     <div class="section-column">
-      <a href="https://github.com/ksevelyar/idempotent-desktop" target="_blank">
-        <h3>NixOS multi-user and multi-host configuration</h3>
-        <img class="resume-image" src="images/code-review-dashboard.png" alt="">
-      </a>
+        <h3>Idempotent Server</h3>
+        <a href="https://github.com/ksevelyar/idempotent-server" target="_blank">idempotent-server</a>
+        <p>NixOS хосты, на которых запущены в том числе числе Habits Tracker и система умного дома на ARM одноплатнике с zigbee. Управление секретами через agenix, декларативное описание дисков с disko, разворачивание на произвольном vps через nixos-anywhere.</p>
     </div>
 
     <script type="module" src="/main.js"></script>

@@ -88,7 +88,7 @@ li:before {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   max-width: 100%;
-  object-fit: none;
+  object-fit: contain;
   object-position: 0 0;
 }
 
