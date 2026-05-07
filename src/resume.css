@@ -1,9 +1,9 @@
 :root {
-  --bg: #d7cde1;
-  --fg: #22181c;
-  --link-fg: #7a79b7;
-  --link-fg-hover: #00afb5;
-  --font-size: 16px;
+  --bg: #e6e6e6;
+  --fg: #1a1a1a;
+  --link-fg: #6f6f6f;
+  --link-fg-hover: #4f4f4f;
+  --font-size: 18px;
 }
 
 @font-face {
@@ -23,8 +23,8 @@ a {
   text-decoration: none;
   color: var(--link-fg);
 }
+
 a:hover {
-  transition: all 0.5s linear;
   color: var(--link-fg-hover);
 }
 
@@ -37,31 +37,24 @@ body {
   font-size: var(--font-size);
   color: var(--fg);
   background: var(--bg);
+  max-width: 80ch;
 }
 
 ul {
   list-style: none;
 }
+
 li:before {
   content: "⋄";
-  padding-right: 0.5rem;
+  padding-right: 4px;
 }
 
 .resume {
-  grid-gap: 1rem;
   min-height: 100vh;
   margin: 0;
   font-family: "Iosevka";
   padding: 2ch;
-  display: grid;
-  grid-auto-rows: min-content;
-  grid-template-columns: 1fr 1fr;
-  max-width: 970px;
   margin: 0 auto;
-}
-
-.intro {
-  text-align: justify;
 }
 
 .resume-contacts {
@@ -72,6 +65,10 @@ li:before {
 .resume-contacts__github {
   font-size: 2rem;
   display: block;
+}
+
+.resume-header__position {
+  text-wrap: nowrap;
 }
 
 .resume-header__position,
@@ -92,47 +89,12 @@ li:before {
   object-position: 0 0;
 }
 
-.wh-2 {
-  grid-row: 10;
+.resume-section {
+  margin-bottom: 1rem;
 }
 
-.wh-4 {
-  grid-row: 12;
-}
-
-.intro,
-.section-title,
 .section-column {
-  grid-column-end: span 2;
-}
-
-@media (min-width: 600px) {
-  .resume-contacts {
-    text-align: right;
-    grid-column-end: span 1;
-  }
-
-  .wh-2 {
-    grid-row: 9;
-  }
-
-  .wh-4 {
-    grid-row: 11;
-  }
-
-  .resume-header__name,
-  .resume-contacts__github {
-    font-size: 26px;
-  }
-
-  .resume-header__position,
-  .resume-contacts__email {
-    font-size: 24px;
-  }
-
-  .resume {
-    padding: 1rem;
-  }
+  margin-bottom: 1rem;
 }
 
 @media print {
@@ -142,22 +104,9 @@ li:before {
   }
 }
 
-@media (min-width: 850px), print {
-  .wh-2 {
-    grid-row: auto;
-  }
+@media (min-width: 850px),
+print {
 
-  .wh-4 {
-    grid-row: auto;
-  }
-
-  .resume {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .resume-contacts {
-    text-align: right;
-    grid-column-end: span 2;
-  }
   .resume-header__name,
   .resume-contacts__github {
     font-size: 35px;
@@ -172,10 +121,6 @@ li:before {
 
   .intro,
   .section-title {
-    grid-column-end: span 3;
     margin-top: 20px;
-  }
-  .section-column {
-    grid-column-end: auto;
   }
 }
