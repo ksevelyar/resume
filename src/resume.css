@@ -30,18 +30,12 @@ a:hover {
 
 h1,
 h2 {
-  font-weight: 500;
-}
-
-body {
-  font-size: var(--font-size);
-  color: var(--fg);
-  background: var(--bg);
-  max-width: 80ch;
+  font-weight: bold;
 }
 
 ul {
   list-style: none;
+  margin-bottom: 0.5rem;
 }
 
 li:before {
@@ -50,10 +44,14 @@ li:before {
 }
 
 .resume {
+  font-size: var(--font-size);
+  color: var(--fg);
+  background: var(--bg);
+  max-width: 80ch;
   min-height: 100vh;
   margin: 0;
   font-family: "Iosevka";
-  padding: 2ch;
+  padding: 1ch;
   margin: 0 auto;
 }
 
@@ -90,37 +88,32 @@ li:before {
 }
 
 .resume-section {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .section-column {
   margin-bottom: 1rem;
 }
 
-@media print {
-  body {
-    font-size: 14pt;
-    background-color: white;
-  }
+.resume-projects,
+.section-column:last-child {
+  margin-bottom: 0;
 }
 
-@media (min-width: 850px),
-print {
+.print {
+  display: none;
+}
 
-  .resume-header__name,
-  .resume-contacts__github {
-    font-size: 35px;
-    display: block;
+@media print {
+  .resume {
+    background-color: white;
   }
 
-  .resume-header__position,
-  .resume-contacts__email {
-    font-size: 24px;
-    display: block;
+  .print {
+    display: inline;
   }
 
-  .intro,
-  .section-title {
-    margin-top: 20px;
+  .resume-projects {
+    break-before: page;
   }
 }

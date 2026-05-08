@@ -4,6 +4,9 @@ export default {
   build: {
     outDir: '../docs',
   },
-  server: { open: true },
-  host: '0.0.0.0'
+  server: {
+    open: true,
+    port: 5000,
+    strictPort: true,
+  },
 }
